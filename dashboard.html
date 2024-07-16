@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Dashboard </title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1b203d;
+            overflow-x:  hidden; /* Prevent horizontal scroll */
+            font-family: system-ui, sans-serif;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .logo {
+            margin: 0;
+            margin-left:  28px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 35px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            z-index:  1;
+            top: 0;
+            left: 0;
+            background-color: #272c4a;
+            overflow: hidden;
+            transition: 0.5s;
+            padding-top: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+        }
+
+        .sidenav.collapsed {
+            width: 60px; /* Width when collapsed */
+        }
+
+        .sidenav.collapsed .logo {
+            display: none; /* Hide the logo when collapsed */
+        }
+
+        .sidenav a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: flex; /* Use flexbox for alignment */
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+            background-color: #1b203d;
+        }
+
+        .sidenav.collapsed a {
+            justify-content: center; /* Center align icons */
+            font-size: 24px; /* Larger icons */
+        }
+
+        .sidenav .icons {
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        #main {
+            margin-left: 300px;
+            padding: 16px;
+            transition: margin-left 0.5s;
+        }
+
+        .sidenav.collapsed ~ #main {
+            margin-left: 60px; /* Adjust main content margin when sidebar is collapsed */
+        }
+
+        .header {
+            padding: 10px 16px;
+            background-color: #1b203d;
+            color: white;
+        }
+
+        .header .nav {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 16px;
+            background-color: #272c4a;
+            color: #f1f1f1;
+            min-height: 100vh;
+        }
+
+        .icons {
+            font-size: 20px;
+        }
+
+        .icon-a {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            color: #818181;
+        }
+
+        .icon-a:hover {
+            background-color: #1b203d;
+            color: #f1f1f1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <p class="logo">Loginfo</p>
+        <a href="#" class="icon-a"><i class="fa fa-tachometer icons"></i>&nbsp;&nbsp;Dashboard</a>
+        <a href="#" class="icon-a"><i class="fa fa-user icons"></i>&nbsp;&nbsp;Employee</a>
+        <a href="#" class="icon-a"><i class="fa fa-list-alt icons"></i>&nbsp;&nbsp;Tasks</a>
+        <a href="#" class="icon-a"><i class="fa fa-list icons"></i>&nbsp;&nbsp;Document</a>
+        <a href="#" class="icon-a"><i class="fa fa-user icons"></i>&nbsp;&nbsp;Accounts</a>
+        <a href="#" class="icon-a"><i class="fa fa-cogs icons"></i>&nbsp;&nbsp;Settings</a>
+    </div>
+    
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
